@@ -379,7 +379,7 @@ img {
 	display: block;
 }
 
-.title h1 {
+.title h3 {
 	font-family: 'Playfair Display', serif;
 	font-weight: bold;
 	font-style: normal;
@@ -388,7 +388,7 @@ img {
 	color: #674ea7;
 }
 
-.title h3 {
+.title h2 {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
