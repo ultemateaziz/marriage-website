@@ -35,7 +35,28 @@
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!--Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+      
    </head>
+
+   <!-- Pop-up Modal -->
+   <div id="feedback-popup" class="popup">
+      <div class="popup-content">
+      <p>Dont Forgot to Share your Feedback.!</p>
+      <button id="share-button">Share on WhatsApp</button>
+      </div>
+   </div>
+   <audio id="notification-sound" src="assets/mp3/pikachu.mp3" preload="auto"></audio>
+
+
+
    <body style="background-color:powderblue;">
       
       <!--music play automatically-->
@@ -44,39 +65,64 @@
       <div class="sakura-falling"></div>
       <img src="assets/img/right.png" alt="image-top-right" class="top-right-decoration">
       <img src="assets/img/left.png" alt="image-top-left" class="top-left-decoration"> 
-      <img src="assets/img/muslim-wedding-couple-cartoon-illustration_637414-139-removebg-preview.png"  width="300" 
-      height="300" alt="image-down-bottom" class="top-down-decoration"> 
+      <img src="assets/img/muslim-wedding-couple-cartoon-illustration_637414-139-removebg-preview.png" 
+         width="300" 
+         height="300" 
+         alt="image-down-bottom" 
+         class="top-down-decoration">
+
       <section id="media"></section>
       <div class="wrap">
          <div class="title">
-            <h3>Suhail </h3>
+            <h3 style="font-size: 70px; font-family:'Parisienne'cursive; text-transform: capitalize;">Suhail </h3>
             <h2>weds</h2>
-            <h3>Malika</h3>
+            <h3 style="font-size: 70px; font-family:'Parisienne'cursive; text-transform: capitalize;">Malika</h3>
             <h3></h3>
             <p>
-             Insha Allah Coming </span>             </p>
+               May Allah bless your union with love, joy, and endless happiness. May your marriage be filled with peace, understanding, and prosperity. Congratulations on this beautiful journey together! </span>             </p>
          </div>
       </div>  
 </div>
-<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-timezone="Asia/Kolkata" data-date="2024-08-07 11:00">Countdown Timer</a>
-      <p class="dance-med">
+
+<div id="timer">
+   <div class="time-unit">
+     <div id="days" class="number">0</div>
+     <div class="label">Days</div>
+   </div>
+   <div class="time-unit">
+     <div id="hours" class="number">0</div>
+     <div class="label">Hours</div>
+   </div>
+   <div class="time-unit">
+     <div id="minutes" class="number">0</div>
+     <div class="label">Minutes</div>
+   </div>
+   <div class="time-unit">
+     <div id="seconds" class="number">0</div>
+     <div class="label">Seconds</div>
+   </div>
+ </div>
+
+
+      <p class="dance-med" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
          7th Aug at A.J.K Mahal Ganapathy Nagar, Mayiladuthurai
       </p>
-      <div class="actions">
-        <a href="https://maps.app.goo.gl/TYAF53XXu2ZTQVto6" target="_blank">
-          <div class="venue">Location</div>
-        </a>
-        <a href="invitation/WhatsApp Image 2024-07-26 at 12.11.49_50c959ef.jpg" download="Invitation | 18  Jan | Hope to see you there!">
-          <div class="venue">E_Invitation</div>
-        </a>
-      
-      </div>
+
+      <div class="button-container">
+         <a href="https://maps.app.goo.gl/TYAF53XXu2ZTQVto6" target="_blank" class="custom-button">
+           <span>Location</span>
+         </a>
+       
+         <a href="invitation/WhatsApp Image 2024-07-26 at 12.11.49_50c959ef.jpg" download="Invitation | 18  Jan | Hope to see you there!" class="custom-button">
+           <span>E_Invitation</span>
+         </a>
+       </div>
+       
    
       
          <div>
             <br/>
-            <h3 color="#AAD6D5">بارك الله لكما وبارك عليكما وجمع بينكما في خير </h3>
+            <h3 class="arabic">بارك الله لكما وبارك عليكما وجمع بينكما في خير </h3>
           </div>
       <p class="footer">
         “The honor of your presence is requested at the marriage of” Suhail & Malika <br/> <br/>          

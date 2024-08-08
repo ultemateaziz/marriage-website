@@ -93,3 +93,63 @@ console.log(
     `%cShaadi me zaroor aana!\n\n`,
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
+
+ // Set the start time (August 7th, 12:30 PM)
+ var startTime = new Date("August 7, 2024 12:30:00").getTime();
+
+ function updateTimer() {
+   var now = new Date().getTime();
+   var timeElapsed = now - startTime;
+
+   var days = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((timeElapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((timeElapsed % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((timeElapsed % (1000 * 60)) / 1000);
+
+   document.getElementById('days').innerText = days;
+   document.getElementById('hours').innerText = hours;
+   document.getElementById('minutes').innerText = minutes;
+   document.getElementById('seconds').innerText = seconds;
+ }
+
+ setInterval(updateTimer, 1000);
+ updateTimer(); // initial call to set the timer immediately
+
+ //popup
+ // script.js
+
+// Show the pop-up
+function showPopup() {
+  const popup = document.getElementById('feedback-popup');
+  const sound = document.getElementById('notification-sound');
+  
+  // Play notification sound
+  sound.play();
+
+  // Show the pop-up
+  popup.style.display = 'flex';
+
+  // Hide the pop-up after 5 seconds
+  setTimeout(() => {
+    popup.style.display = 'none';
+  }, 3000);
+}
+
+// Share feedback on WhatsApp
+document.getElementById('share-button').addEventListener('click', function() {
+  const message = encodeURIComponent('I would like to share my feedback!');
+  const whatsappUrl = `https://wa.me/919943093556?text=Your%20Message%20Here`;
+  
+  // Open WhatsApp
+  window.open(whatsappUrl, '_blank');
+
+  // Optionally, hide the pop-up if needed
+  document.getElementById('feedback-popup').style.display = 'none';
+});
+
+// Display the pop-up when the page loads
+window.onload = function() {
+  showPopup();
+};
+
+//popup
