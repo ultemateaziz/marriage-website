@@ -132,7 +132,7 @@ function showPopup() {
   // Hide the pop-up after 5 seconds
   setTimeout(() => {
     popup.style.display = 'none';
-  }, 3000);
+  }, 2000);
 }
 
 // Share feedback on WhatsApp
